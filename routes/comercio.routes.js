@@ -1,10 +1,8 @@
 import Router from "express"
-
+import cController from "../controllers/comercioController.js"
 const ruta = Router();
 
-ruta.get("/listadoComercios",(req,res)=>{
-    res.send("Listado de todos los comercios registrados");
-})
+ruta.get("/listadoComercios",cController.listado)
 
 
 export default ruta
