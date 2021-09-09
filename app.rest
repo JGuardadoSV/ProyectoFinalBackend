@@ -1,0 +1,10 @@
+POST http://localhost:3000/registrar
+Content-Type: application/json
+
+{
+    "nombre":"Comercio 01",
+    "telefono":75000222
+}
+
+###
+GET http://localhost:3000/listadoComercios
