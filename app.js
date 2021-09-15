@@ -1,7 +1,7 @@
-import  Express  from "express";
-import Morgan from "morgan";
+const  Express  =require("express");
+const Morgan =require("morgan");
 
-import RutasComercio from "./routes/comercio.routes.js"
+const RutasComercio =require("./routes/comercio.routes.js")
 
 
 const app = Express();
@@ -18,7 +18,7 @@ app.get("/",(req,res)=>{
 })
 
 
-export default app
+module.exports= app
 
 
 

@@ -1,4 +1,4 @@
-import  Mongoose  from "mongoose";
+const  Mongoose  =require( "mongoose");
 
 
 
@@ -9,5 +9,5 @@ const comercioSchema= Mongoose.Schema({
 
 })
 
-export default Mongoose.model('Comercio',comercioSchema)
+module.exports= Mongoose.model('Comercio',comercioSchema)
 

@@ -1,4 +1,4 @@
-import  Mongoose  from "mongoose";
+const  Mongoose  =require("mongoose");
 
 
 Mongoose
@@ -7,4 +7,4 @@ Mongoose
 .catch((err)=>console.log("No se conecta :("));
 
 
-export default Mongoose
+module.exports= Mongoose

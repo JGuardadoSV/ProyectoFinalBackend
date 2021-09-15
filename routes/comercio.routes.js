@@ -1,5 +1,5 @@
-import Router from "express"
-import cController from "../controllers/comercioController.js"
+const Router =require( "express")
+const cController =require( "../controllers/comercioController.js")
 const ruta = Router();
 //todos
 ruta.get("/listadoComercios",cController.listado)
@@ -12,4 +12,4 @@ ruta.delete("/eliminarComercio/:id",cController.eliminar)
 
 ruta.put("/editarComercio/:id",cController.actualizar)
 
-export default ruta
+module.exports=ruta
