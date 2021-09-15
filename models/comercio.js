@@ -1,5 +1,7 @@
 import  Mongoose  from "mongoose";
 
+
+
 const comercioSchema= Mongoose.Schema({
 
     nombre:{type:String,required:true},
